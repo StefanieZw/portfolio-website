@@ -19,31 +19,31 @@ Project Reach Mockup (Darker Blue): #489FB6;
 body{
   background-color: #ffffff;
   font-family: 'Crimson Text', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.4;
   color: #000000;
 }
 h1, h2, h3, h4{
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.4
+  line-height: 1.2
+
 }
 h1{
-  font-size: 2.75em;
+  font-size: 40px;
   font-weight: 500;
 }
 h2{
-  font-size: 2em;
+  font-size: 30px;
   font-weight: 500;
   color: #344C7E;
 }
 h3{
-  font-size: 1.5em;
+  font-size: 25px;
   font-weight: 500;
-  color: #000000;
 }
 h4{
-  font-size: 1.25em;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -51,189 +51,135 @@ img {
   width: 100%;
 }
 
-header{
-  background-color: #B3C8F3;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.25em;
-  font weight: 400;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a.hover {
-  color: #344C7E;
-}
-
-li a.active{
-  text-decoration: underline;
-}
-
 
 footer{
   background-color: #B3C8F3;
 }
 
-.section.welcome{
+.button{
   display: inline-block;
-  background-color: #B3C8F3;
-}
-
-.ul.horizontal {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #B3C8F3;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a.hover {
-  color: #344C7E;
-}
-
-li a.active{
-  text-decoration: underline;
-}
-
-.button.reach{
-  display: inline-block;
-  background-color: #65C396;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 8px 24px;
   transition: 0.2s opacity;
   text-decoration: none;
 }
 
-.button.reach:hover {
+.button:hover {
   opacity: 0.8;
+}
+
+.button.reach{
+  background-color: #65C396;
 }
 .button.reach:active{
   background-color: #58AB83;
 }
 
 .button.speakeasy{
-  display: inline-block;
   background-color: #A0C6FE;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 24px;
-  padding-right: 24px;
-  transition: 0.2s opacity;
-  text-decoration: none;
-}
-
-.button.speakeasy:hover {
-  opacity: 0.8;
 }
 .button.speakeasy:active{
   background-color: #8EB2E5;
 }
 
 .button.desenio{
-  display: inline-block;
   background-color: #556A74;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 24px;
-  padding-right: 24px;
-  transition: 0.2s opacity;
-  text-decoration: none;
-}
-
-.button.desenio:hover {
-  opacity: 0.8;
 }
 .button.desenio:active{
   background-color: #3D4C53;
 }
 
 .button.contact{
-  display: inline-block;
   background-color: #747F97;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 50px;
-  padding-right: 50px;
-  transition: 0.2s opacity;
-  text-decoration: none;
-}
-
-.button.contact:hover {
-  opacity: 0.8;
+  padding: 8px 50px;
 }
 .button.contact:active{
   background-color: #5E677B;
 }
 
 .button.download{
-  display: inline-block;
   background-color: #747F97;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 50px;
-  padding-right: 50px;
-  transition: 0.2s opacity;
-  text-decoration: none;
+  padding: 8px 50px;
+}
+.button.download:active{
+  background-color: #5E677B;
 }
 
-.button.contact:hover {
-  opacity: 0.8;
+/* Layout styling */
+
+header{
+  background-color: #B3C8F3;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  box-shadow: 0px 5px 3px 0px rgba(50, 50, 50, 0.6);
 }
-.button.contact:active{
-  background-color: #5E677B;
+
+.container {
+  padding: 0 15px;
+}
+
+#work .row {
+  margin: 25px 0;
+}
+
+.logo {
+  max-width: 75px;
+  max-height: 75px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+}
+
+nav > ul > li > a:visited{
+  opacity: 80%;
+}
+
+nav > ul > li > a:hover {
+  color: #344C7E;
+}
+
+nav > ul > li > a:active {
+  text-decoration: underline;
+}
+
+#hero .container {
+  background-color: #B3C8F3;
+  padding-bottom: 10px;
+
+}
+
+#hero h1{
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+
+main {
+  padding-top: 127px;
 }
