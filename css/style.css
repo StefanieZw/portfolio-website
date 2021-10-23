@@ -15,6 +15,11 @@ Project Reach Test (Darker Green): #65C691;
 Project Reach Visual Design (Green): #65C88D;
 Project Reach Mockup (Darker Blue): #489FB6;
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
   font-family: 'Crimson Text', sans-serif;
@@ -34,17 +39,17 @@ h1 {
   font-size: 2.2em;
 }
 
-h2 {
-  font-size: 30px;
+h2, .h2 {
+  font-size: 1.67em;
   color: #344C7E;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 1.39em;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 1.11em;
 }
 
 img {
@@ -215,4 +220,175 @@ main {
 
 .social {
   margin-top: 1em;
+}
+
+/*Project Reach*/
+
+main.reach{
+  background-color: #EFF2F4;
+}
+
+
+p.title{
+  font-weight: 600;
+  font-size: 1.11em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+p.text {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.reach .section h2 {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 0.55em 2.78em 0.55em 1.38em;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0, 0.25);
+}
+
+.section.project h2 {
+  background-color: #65ADBA;
+}
+
+.section.project h3 {
+  color: #65ADBA;
+}
+
+
+.talkspace {
+  max-width: 100px;
+}
+
+.row.swot .column {
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0 0 1em 0;
+  padding: 0.5em;
+}
+
+.swot h4 {
+  margin-top: 0;
+}
+
+.section.observe h2{
+  background-color: #65B3B0;
+}
+
+.section.observe h3{
+  color: #65B3B0;
+}
+
+.section.observe .column{
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+.section.observe .column.habits {
+  border: 2px solid #F47D31;
+}
+
+.section.observe .column.opinions {
+  border: 2px solid #05A1FA;
+}
+
+.section.observe .column.apps {
+  border: 2px solid #DA4C6E;
+}
+
+.section.userpersonas h2{
+  background-color: #65BCA2;
+}
+
+.section.userpersonas h3{
+  color: #65BCA2;
+}
+
+.section.ideate h2{
+  background-color: #65C494;
+}
+
+.section.screenevolution {
+  background-color: #fff;
+  padding-bottom: 0.5em;
+}
+.section.screenevolution h3{
+  color: #65C494;
+}
+
+.section.screenevolution img{
+  margin: 0;
+  padding: 0.55em 2.78em 0.55em 2.78em;
+}
+
+.section.test {
+  background-color: #fff;
+}
+.section.test h2 {
+  background-color: #65C691;
+}
+
+.section.test h3 {
+color: #65C691;
+}
+
+p.row.description {
+  margin: 0;
+}
+.section.test .row.description {
+  background-color: #EFF2F4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0.75em 0;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+.section.test .row.issues {
+  background-color: #65C691;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0.75em 0;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+.section.test img{
+  margin: 0;
+  padding: 0.55em 2.78em 0.55em 2.78em;
+}
+
+.row.home p {
+  font-weight: 600;
+  text-align: center;
+}
+
+.row.onboarding p {
+  font-weight: 600;
+  text-align: center;
+}
+
+.section.visualdesign h2 {
+  background-color: #65C88D;
+}
+
+.section.visualdesign img{
+  margin-top: 1em;
+}
+
+.section.mockup {
+  background-color: #489FB6;
+  color: #fff;
+
+}
+
+.section.mockup p {
+  text-align: center;
+}
+
+.section.learnings h2 {
+  background-color: #78D49E;
 }
