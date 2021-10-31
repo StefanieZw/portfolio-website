@@ -15,7 +15,6 @@ Project Reach Test (Darker Green): #65C691;
 Project Reach Visual Design (Green): #65C88D;
 Project Reach Mockup (Darker Blue): #489FB6;
 */
-
 * {
   box-sizing: border-box;
 }
@@ -60,7 +59,7 @@ a {
   color: #000;
 }
 
-a:visited{
+a:visited {
   color: #000;
 }
 
@@ -86,6 +85,8 @@ a.button {
   padding: 8px 24px;
   transition: 0.2s opacity;
   text-decoration: none;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
@@ -223,13 +224,11 @@ main {
 }
 
 /*Project Reach*/
-
-main.reach{
+main.reach {
   background-color: #EFF2F4;
 }
 
-
-p.title{
+p.title {
   font-weight: 600;
   font-size: 1.11em;
   margin: 0.5em 0 0.5em 0;
@@ -245,7 +244,7 @@ p.text {
   margin: 0;
   padding: 0.55em 2.78em 0.55em 1.38em;
   border-radius: 8px;
-  box-shadow: 3px 3px 3px 0px rgba(0,0,0, 0.25);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
 }
 
 .section.project h2 {
@@ -256,6 +255,11 @@ p.text {
   color: #65ADBA;
 }
 
+.section.project .row.potentialsolution {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1em;
+}
 
 .talkspace {
   max-width: 100px;
@@ -272,15 +276,15 @@ p.text {
   margin-top: 0;
 }
 
-.section.observe h2{
+.section.observe h2 {
   background-color: #65B3B0;
 }
 
-.section.observe h3{
+.section.observe h3 {
   color: #65B3B0;
 }
 
-.section.observe .column{
+.section.observe .column {
   background-color: #fff;
   text-align: center;
   box-sizing: border-box;
@@ -288,6 +292,7 @@ p.text {
   margin: 10px 0;
   padding: 0 15px;
 }
+
 .section.observe .column.habits {
   border: 2px solid #F47D31;
 }
@@ -300,15 +305,15 @@ p.text {
   border: 2px solid #DA4C6E;
 }
 
-.section.userpersonas h2{
+.section.userpersonas h2 {
   background-color: #65BCA2;
 }
 
-.section.userpersonas h3{
+.section.userpersonas h3 {
   color: #65BCA2;
 }
 
-.section.ideate h2{
+.section.ideate h2 {
   background-color: #65C494;
 }
 
@@ -316,38 +321,45 @@ p.text {
   background-color: #fff;
   padding-bottom: 0.5em;
 }
-.section.screenevolution h3{
+
+.section.screenevolution h3 {
   color: #65C494;
 }
 
-.section.screenevolution img{
+.section.screenevolution img {
   margin: 0;
   padding: 0.55em 2.78em 0.55em 2.78em;
 }
 
 .section.test {
-  background-color: #fff;
+  background-color: #EFF2F4;
 }
+
 .section.test h2 {
   background-color: #65C691;
 }
 
 .section.test h3 {
-color: #65C691;
+  color: #65C691;
 }
 
-p.row.description {
+p.row.test {
   margin: 0;
 }
-.section.test .row.description {
-  background-color: #EFF2F4;
+
+.section.results {
+  background-color: #fff;
+}
+
+.section.test .column.description {
+  background-color: #fff;
   box-sizing: border-box;
   border-radius: 8px;
   margin: 0.75em 0;
   padding: 0.5em 1em 0.5em 1em;
 }
 
-.section.test .row.issues {
+.section.test .column.issues {
   background-color: #65C691;
   color: #fff;
   box-sizing: border-box;
@@ -356,7 +368,7 @@ p.row.description {
   padding: 0.5em 1em 0.5em 1em;
 }
 
-.section.test img{
+.section.test img {
   margin: 0;
   padding: 0.55em 2.78em 0.55em 2.78em;
 }
@@ -375,14 +387,13 @@ p.row.description {
   background-color: #65C88D;
 }
 
-.section.visualdesign img{
+.section.visualdesign img {
   margin-top: 1em;
 }
 
 .section.mockup {
   background-color: #489FB6;
   color: #fff;
-
 }
 
 .section.mockup p {
@@ -391,4 +402,119 @@ p.row.description {
 
 .section.learnings h2 {
   background-color: #78D49E;
+}
+
+/* BreakPoints
+ ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  .flex, header .container {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+   }
+
+   header .container {
+    align-items: center;
+  }
+
+
+main {
+  padding-top: 95px;
+}
+
+
+h1, h2, h3, h4 {
+  margin: 10px 0;
+}
+
+h1, h2 {
+  padding: 10px;
+}
+
+#hero.section.welcome{
+  padding: 10px;
+}
+
+
+.col-md-6, .col-md-4, .col-md-3 {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75em 0 0 0.75em;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  width: 50%;
+  align-items: center;
+}
+
+.col-md-4 {
+  width: 43%;
+  align-items: center;
+  margin: 0;
+}
+
+.col-md-3 {
+  width: 33%;
+  align-items: center;
+}
+
+.section.results img {
+  max-width: 250px;
+}
+
+.section.results .column {
+  align-items: center;
+}
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+body {
+  font-size: 20px
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+
+/*CSS Animation Practice*/
+
+svg {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+@keyframes color-change {
+  from {fill: #99d7f7;}
+  to {fill: #003b62;}
+}
+
+.cls-3 {
+  animation-duration: 5s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 }
