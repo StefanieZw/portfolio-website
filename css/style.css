@@ -138,7 +138,7 @@ a.button {
 /* Layout styling */
 header {
   background-color: #B3C8F3;
-  text-align: center;
+  display: block;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -157,8 +157,19 @@ header {
   max-width: 75px;
 }
 
-nav {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 24px;
 }
 
 nav>ul {
@@ -167,8 +178,21 @@ nav>ul {
   margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #344C7E;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 nav>ul>li>a {
@@ -203,7 +227,7 @@ nav>ul>li>a:active {
 }
 
 main {
-  padding-top: 131px;
+  padding-top: 103px;
 }
 
 .section, footer {
@@ -221,6 +245,28 @@ main {
 
 .social {
   margin-top: 1em;
+}
+
+/*CSS Animation Practice*/
+
+svg {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+@keyframes color-change {
+  from {fill: #99d7f7;}
+  to {fill: #003b62;}
+}
+
+.cls-3 {
+  animation-duration: 5s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 }
 
 /*Project Reach*/
@@ -405,11 +451,11 @@ p.row.test {
 }
 
 /* BreakPoints
- ==============================
+==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  .flex, header .container {
+  .flex, #myNavtoggle {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
@@ -417,10 +463,21 @@ Medium devices (640px and larger)
      flex-wrap: wrap;
    }
 
-   header .container {
+   #myNavtoggle {
     align-items: center;
   }
 
+    nav>ul>li {
+      display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
 main {
   padding-top: 95px;
@@ -494,27 +551,4 @@ X-large devices (1440px or larger)
   margin-right: auto;
 }
 
-}
-
-
-/*CSS Animation Practice*/
-
-svg {
-  width: 100%;
-max-width: 100%;
-height: auto;
-}
-
-@keyframes color-change {
-  from {fill: #99d7f7;}
-  to {fill: #003b62;}
-}
-
-.cls-3 {
-  animation-duration: 5s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
 }
