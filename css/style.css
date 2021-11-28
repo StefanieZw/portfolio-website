@@ -36,6 +36,10 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2.2em;
+  line-height: 1.5;
+}
+span {
+  display: inline-block;
 }
 
 h2, .h2 {
@@ -110,7 +114,7 @@ a.button {
 }
 
 .button.desenio {
-  background-color: #556A74;
+  background-color: #A4A4A4;
 }
 
 .button.desenio:active {
@@ -119,7 +123,7 @@ a.button {
 
 .button.contact {
   background-color: #747F97;
-  padding: 8px 50px;
+  padding: 12px 50px;
 }
 
 .button.contact:active {
@@ -128,7 +132,8 @@ a.button {
 
 .button.download {
   background-color: #747F97;
-  padding: 8px 50px;
+  padding: 12px 55px;
+  margin: 2em 0 4em 0;
 }
 
 .button.download:active {
@@ -178,20 +183,21 @@ nav>ul {
   margin: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #344C7E;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -213,6 +219,14 @@ nav>ul>li>a:hover {
 }
 
 nav>ul>li>a:active {
+  text-decoration: underline;
+}
+
+a.work {
+  text-decoration: underline;
+}
+
+a.about {
   text-decoration: underline;
 }
 
@@ -248,16 +262,20 @@ main {
 }
 
 /*CSS Animation Practice*/
-
 svg {
   width: 100%;
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes color-change {
-  from {fill: #99d7f7;}
-  to {fill: #003b62;}
+  from {
+    fill: #99d7f7;
+  }
+
+  to {
+    fill: #003b62;
+  }
 }
 
 .cls-3 {
@@ -267,11 +285,31 @@ height: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-}
 
 /*Project Reach*/
 main.reach {
   background-color: #EFF2F4;
+  margin-bottom: 0;
+}
+
+.reach h2, .reach h3{
+  margin-top: 1.5em;
+}
+
+.reach .section {
+  margin-bottom: 3em;
+}
+
+.reach .row {
+  margin-bottom: 3em;
+}
+
+.row.talkspace {
+  margin-bottom: 0.5em;
+}
+
+.section.learnings {
+  margin-bottom: 0;
 }
 
 p.title {
@@ -301,10 +339,11 @@ p.text {
   color: #65ADBA;
 }
 
-.section.project .row.potentialsolution {
+.potentialsolution .column {
   background-color: #fff;
   border-radius: 8px;
   padding: 1em;
+  margin: 1em 0;
 }
 
 .talkspace {
@@ -377,9 +416,6 @@ p.text {
   padding: 0.55em 2.78em 0.55em 2.78em;
 }
 
-.section.test {
-  background-color: #EFF2F4;
-}
 
 .section.test h2 {
   background-color: #65C691;
@@ -456,99 +492,93 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   .flex, #myNavtoggle {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-   }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-   #myNavtoggle {
+  #myNavtoggle {
     align-items: center;
   }
 
-    nav>ul>li {
-      display: inline-block;
-    }
+  nav>ul>li {
+    display: inline-block;
+  }
 
-    .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-main {
-  padding-top: 95px;
-}
+  main {
+    padding-top: 95px;
+  }
 
+  h1, h2, h3, h4 {
+    margin: 10px 0;
+  }
 
-h1, h2, h3, h4 {
-  margin: 10px 0;
-}
+  h1, h2 {
+    padding: 10px;
+  }
 
-h1, h2 {
-  padding: 10px;
-}
+  #hero.section.welcome {
+    padding: 10px;
+  }
 
-#hero.section.welcome{
-  padding: 10px;
-}
+  .col-md-6, .col-md-4, .col-md-3 {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75em 0 0 0.75em;
+    flex-wrap: wrap;
+  }
 
+  .col-md-6 {
+    width: 49%;
+    align-items: center;
+  }
 
-.col-md-6, .col-md-4, .col-md-3 {
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0.75em 0 0 0.75em;
-  flex-wrap: wrap;
-}
+  .col-md-4 {
+    width: 32%;
+    align-items: center;
+    margin: 0;
+  }
 
-.col-md-6 {
-  width: 50%;
-  align-items: center;
-}
+  .col-md-3 {
+    width: 24%;
+    align-items: center;
+  }
 
-.col-md-4 {
-  width: 43%;
-  align-items: center;
-  margin: 0;
-}
+  .section.results img {
+    max-width: 250px;
+  }
 
-.col-md-3 {
-  width: 33%;
-  align-items: center;
-}
-
-.section.results img {
-  max-width: 250px;
-}
-
-.section.results .column {
-  align-items: center;
-}
-
+  .section.results .column {
+    align-items: center;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
-body {
-  font-size: 20px
+  body {
+    font-size: 20px
+  }
 }
-
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
