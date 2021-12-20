@@ -40,7 +40,7 @@ h1 {
 }
 
 span {
-  display: inline-block;
+  display: block;
 }
 
 h2, .h2 {
@@ -96,6 +96,14 @@ a.button {
 
 .button:hover {
   opacity: 0.8;
+}
+
+.button.portfolio {
+  background-color: #747F97;
+}
+
+.button.portfolio:active {
+  background-color: #667189;
 }
 
 .button.reach {
@@ -269,23 +277,82 @@ svg {
   height: auto;
 }
 
-@keyframes color-change {
-  from {
-    fill: #99d7f7;
+#Blob, #Blob_2, #Blob_3, #Blob_4 {
+  animation: Blob 4s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+@keyframes Blob {
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(90deg);
   }
 
-  to {
-    fill: #003b62;
-  }
 }
 
-.cls-3 {
-  animation-duration: 5s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+
+/*Project Portfolio*/
+main.portfolio {
+  background-color: #EAF0FE;
 }
+
+.portfolio h2 {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 140px 50px;
+  border-radius: 50%;
+  margin-bottom: 2em;
+}
+
+.section.understand h2 {
+  background-color: #747F97;
+}
+
+.section.process h2 {
+  background-color: #B3C8F3;
+}
+
+.section.conclusion h2 {
+  background-color: #344C7E;
+}
+
+.portfolio .section.conclusion {
+  margin-bottom: 0;
+}
+
+.portfolio .row {
+  margin-bottom: 5em;
+}
+
+.row.problem {
+  color: #fff;
+  background-color: #747F97;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.column.IA {
+  background-color: #C5D9E8;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.row.improvements {
+  background-color: #C1D2EC;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.row.flex.improvements {
+  margin-bottom: 1em;
+  justify-content: space-around;
+  box-shadow: none;
+}
+
 
 /*Project Reach*/
 main.reach {
@@ -297,7 +364,7 @@ main.reach {
   margin-top: 1.5em;
 }
 
-.reach .section {
+.reach .section, .portfolio .section {
   margin-bottom: 3em;
 }
 
