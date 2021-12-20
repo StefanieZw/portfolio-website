@@ -122,13 +122,6 @@ a.button {
   background-color: #90B4EA;
 }
 
-.button.desenio {
-  background-color: #A4A4A4;
-}
-
-.button.desenio:active {
-  background-color: #3D4C53;
-}
 
 .button.contact {
   background-color: #747F97;
